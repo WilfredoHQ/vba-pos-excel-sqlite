@@ -1,0 +1,12 @@
+* Data inicial
+
+INSERT INTO states (state) VALUES ('activo'),('inactivo'),('eliminado');
+INSERT INTO positions (position, sales, orders, units, categories, products, customers, employees, positions, settings, database) VALUES ('Administrador','255','255','255','255','255','255','255','255','255','255');
+INSERT INTO employees (idPosition, dni, name, surname, phone, email, address) VALUES ('1','12345678','Super','User','987654321','admin@gmail.com','-');
+INSERT INTO users (idEmployee, secretKey) VALUES ('1','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
+INSERT INTO units (unit) VALUES ('ud'),('kg'),('m'),('l'),('kit');
+INSERT INTO customers (dni, name, surname, phone, email, address) VALUES ('0','Usuario','Genérico','0','-','-');
+
+* Resetear un campo autoincrement
+
+DELETE FROM sqlite_sequence WHERE name='NombreDeTablaAResetear';
